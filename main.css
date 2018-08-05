@@ -2,6 +2,10 @@ h1,h2,h3,h4,h5{
     font-family: 'Lobster Two';
 }
 
+.text-center{
+    text-align: center;
+}
+
 header{
     height: 300px;
 }
@@ -53,13 +57,18 @@ nav ul li.selected {
 }
 
 nav ul li:hover {
-    border-bottom:3px solid black;
+    border-bottom:3px solid pink;
 }
 
 nav ul li a {
     color: #000;
     text-decoration: none;
 }
+
+nav ul li:hover a {
+    color: pink;
+}
+
 nav ul li a:visited {
     color: #000;
 }
@@ -67,7 +76,6 @@ nav ul li a:visited {
 .main-section{
     display: flex;
     justify-content: center;
-    height: 400px;
 }
 
 .main-section .quote{
@@ -89,15 +97,65 @@ nav ul li a:visited {
     max-width: 100%;
     max-height: 100%;
 }
+
 div .contact {
     text-align: center;
     border-style: dashed;
     border-color: pink;
     font-family: 'Lato', sans-serif;
-    font-size: 50px;
+    font-size: 30px;
+    padding: 50px;
+    margin: 50px;
 }
 .left-section, .right-section{
     font-family: 'Lato', sans-serif;
-    width: 20%;
-    font-size: 150%;
+    width: 150%;
+    font-size: 120%;
+    text-align: center;
+}
+.WeddingCake h1{
+    font-size: 500%;
+    text-align: center;
+    margin: 25px;
+}
+.WeddingCake p{
+    font-family: 'Lato', sans-serif;
+    font-size: 150%; 
+    text-align: center;
+    border-style: dashed;
+    border-color: pink;
+    padding: 20px;
+}
+.img-container.circle img{
+    border-radius: 50%
+}
+.gallery{
+    text-align: center;
+    margin-bottom:  200px;
+}
+
+.gallery .img-container{
+    max-width: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.thumbnail img{
+    max-height: 100px;
+}
+
+.gallery .thumbnail img{
+    cursor: pointer;
+}
+
+.centered-container{
+    position: relative;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
